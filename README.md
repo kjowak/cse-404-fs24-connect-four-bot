@@ -17,3 +17,11 @@ Which libraries you will use?
     numpy
     matplotlib
     juypiter
+
+
+Team Memebers:
+Will Bray-Cotton
+Joseph Khalaf
+Kyle Nowak
+Adam Cooper
+Riley Moorman
