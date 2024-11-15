@@ -48,6 +48,10 @@ Multilayer Perceptron models:
 3. Simple CNN:
     Epoch [10/50], Loss: 0.2338
     Epoch [20/50], Loss: 0.2062
+    Epoch [30/50], Loss: 0.1843
+    Epoch [40/50], Loss: 0.1711
+    Epoch [50/50], Loss: 0.1572
+    Loss on test set: 0.1565
 
     This model seemed to show the best learning, loss went way down and the test set preformed very well with this model. While it still needs some work this method is very promising.
 
