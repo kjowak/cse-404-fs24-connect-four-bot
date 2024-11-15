@@ -58,9 +58,28 @@ Multilayer Perceptron models:
 
 
 
+Reinforcement Learning Models:
+    1. Simple Reinforcement Learning:
+       - Learns by playing against a random moves,
+         this bot learns by a reward system where it gets:
+         - +10 points whenever it wins
+         - -10 points when it loses
+         - +5 points whenever it blocks an opponents 3 in a row
+         - +1 whenever it ties
+   2. DQN Approach:
+      - Learns in the same way as the other model
+      - Includes a Dueling DQN which separates value and advantage streams,
+        which should be more efficient
+   Both of these models train againt random moves-- as such, they learned the same strategy
+   of placing in the same column repetatively as it is unlikely that the opponent will do anything
+   to block it. In order to improve them before the final code, I will need to rework the reward system
+   as well as make the bot it plays against be a little more intellegent.
+   
+
 Team Memebers:
 Will Bray-Cotton
 Joseph Khalaf
 Kyle Nowak
 Adam Cooper
 Riley Moorman
+
