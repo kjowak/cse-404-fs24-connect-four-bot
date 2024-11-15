@@ -18,6 +18,15 @@ Which libraries you will use?
     matplotlib
     juypiter
 
+Multilayer Perceptron models:
+1. Simple 3 linear layer model:
+    -
+
+2. 9 linear layer model:
+    -
+
+3. Simple CNN:
+    -
 
 Team Memebers:
 Will Bray-Cotton
