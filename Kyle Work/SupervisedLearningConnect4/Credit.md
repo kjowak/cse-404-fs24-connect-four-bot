@@ -1,0 +1,1 @@
+Credit to https://github.com/t-brewer/connect4_CNN/blob/master/connect4_notebook_demo.ipynb for the framework of the notebook
