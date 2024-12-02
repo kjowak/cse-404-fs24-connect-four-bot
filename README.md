@@ -7,8 +7,7 @@ What is the setting of your project? is it supervised, unsupervised, or semisupe
 How you represent X (Features/Representation  and their explanation, justification)
     42 features of all the positions on a connect-4 board, either 1,0,-1, representing user 1, blank, user 2. A label of who won/lost the game is also inputted.
 How do you represent Y (binary? multi-class? sequences? trees? graphs?)
-    Y is a multi-classification, and can be -1,0,1  player 1 won, representing a tie, or player 2 won. 
-
+    Y is a multi-classification, and can be an integer 0-6 representing which move is the best to play in a given scenerio. 
 
 Which libraries you will use?
     scikit-learn
@@ -18,44 +17,45 @@ Which libraries you will use?
     matplotlib
     juypiter
 
+What types of models did we create?
+1. CNN
+2. MLP
+3. SVM
+4. Decision Tree
+5. Reinforcement Learning
 
+**CNN Model:**
+How It's Made:
+    - Built using convolutional neural networks.
+    - Consists of:
+        - 3 convolutional layers with tanh activation functions.
+        - Each convolutional layer uses a 3x3 filter with padding='same' to preserve spatial dimensions.
+        - 2 MaxPooling2D layers to downsample feature maps (pool size: 2x2).
+        - 1 fully connected dense layer with 64 units and tanh activation.
+        - A Dropout layer with 50% dropout rate for regularization.
+    - Optimizer: Adam with a learning rate of 0.0001.
+    - Loss Function: Categorical Crossentropy for multiclass classification.
+    - Epochs: 100.
+Results:
+    - Training Accuracy: 87%.
+    - Testing Accuracy: 84%.
 
-
-Results!!!!
-
-Multilayer Perceptron models:
-
-1. Simple 3 linear layer model:
-    Epoch [10/50], Loss: 0.2390
-    Epoch [20/50], Loss: 0.2356
-    Epoch [30/50], Loss: 0.2293
-    Epoch [40/50], Loss: 0.2197
-    Epoch [50/50], Loss: 0.2090
-    Loss on test set: 0.2404
-
-    This model does not show much learning, Evaluating test set showed worse results then even the test set.
-
-2. 9 linear layer model:
-    Epoch [10/50], Loss: 0.2407
-    Epoch [20/50], Loss: 0.2283
-    Epoch [30/50], Loss: 0.2018
-    Epoch [40/50], Loss: 0.1824
-    Epoch [50/50], Loss: 0.1624
-    Loss on test set: 0.1609
-
-    This model actually demonstrated some learning. The test set showed imporved results with more observations and evaulating against the test set showed relativly low loss.
-
-3. Simple CNN:
-    Epoch [10/50], Loss: 0.2338
-    Epoch [20/50], Loss: 0.2062
-    Epoch [30/50], Loss: 0.1843
-    Epoch [40/50], Loss: 0.1711
-    Epoch [50/50], Loss: 0.1572
-    Loss on test set: 0.1565
-
-    This model seemed to show the best learning, loss went way down and the test set preformed very well with this model. While it still needs some work this method is very promising.
-
-
+**MLP Model**
+How It's Made:
+    - Built using a fully connected Multilayer Perceptron (MLP).
+    - Consists of:
+        - An input layer to process the flattened 42-cell Connect-4 board.
+        - 2 hidden layers with:
+            - 128 units in the first layer and 64 units in the second layer.
+            - tanh activation for both layers.
+        - A Dropout layer after each hidden layer with a 50% dropout rate for regularization.
+        - An output layer with 7 units (one for each possible move) and softmax activation.
+    - Optimizer: Adam with a learning rate of 0.0001.
+    - Loss Function: Categorical Crossentropy for multiclass classification.
+    - Epochs: 100.
+Results:
+    - Training Accuracy: 73%.
+    - Testing Accuracy: 70%.
 
 
 Reinforcement Learning Models:
