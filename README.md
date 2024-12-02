@@ -57,8 +57,8 @@ How It's Made:
     - Loss Function: Categorical Crossentropy for multiclass classification.
     - Epochs: 100.
 Results:
-    - Training Accuracy: 73%.
-    - Testing Accuracy: 70%.
+    - Training Accuracy: 70.4%.
+    - Testing Accuracy: 70.1%.
 
 **Reinforcement Learning Models**
 How It's Made:
