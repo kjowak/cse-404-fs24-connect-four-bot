@@ -60,6 +60,38 @@ Results:
     - Training Accuracy: 70.4%.
     - Testing Accuracy: 70.1%.
 
+**SVM Model**
+How It's Made:
+    - Built using a support vector machine (SVM)
+    - Hyperparameters:
+        - Kernels of linear, polynomial, and rbf
+        - C values of 0.01, 0.1, 1, 10
+    - Loss Function: Hinge Loss function
+Best Hyperparameters:
+    - C = 10
+    - Kernel = rbf
+Results:
+    - Training Accuracy: 97.37%
+    - Testing Accuracy: 81.55%
+
+**Decision Tree Model**
+How It's Made:
+    - Built using a Decision Tree Classifier
+    - Hyperparameters: 
+        - Gini, Entropy
+        - Maximum Depth of Tree: None, 10, 20,30,40,50
+        - Minimum number of samples to split a node: 2, 5, 10
+        - Minimum number of sample leafs: 1, 2, 4
+    - Loss functions: Gini & Entropy
+Best Hyperparameters:
+    - Gini
+    - Max Depth: 20
+    - Minimum Samples Leaf: 4
+    - Min Samples Split: 10
+Results:
+    - Training Accuracy: 87.48%
+    - Test Accuracy: 79.48%
+
 **Reinforcement Learning Models**
 How It's Made:
     1. Simple Reinforcement Learning:
