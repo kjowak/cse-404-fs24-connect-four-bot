@@ -25,10 +25,12 @@ What types of models did we create?
 5. Reinforcement Learning
 
 NOTE: You can play against all of these models (except reinforcement learning) in the Play Game file.
+
 NOTE: You can play against each reinforcement model in the Connect4_Reinforcement_Learning file.
 
 **CNN Model:**
 How It's Made:
+
     - Built using convolutional neural networks.
     - Consists of:
         - 3 convolutional layers with tanh activation functions.
@@ -40,11 +42,13 @@ How It's Made:
     - Loss Function: Categorical Crossentropy for multiclass classification.
     - Epochs: 100.
 Results:
+
     - Training Accuracy: 87%.
     - Testing Accuracy: 84%.
 
 **MLP Model**
 How It's Made:
+
     - Built using a fully connected Multilayer Perceptron (MLP).
     - Consists of:
         - An input layer to process the flattened 42-cell Connect-4 board.
@@ -57,25 +61,30 @@ How It's Made:
     - Loss Function: Categorical Crossentropy for multiclass classification.
     - Epochs: 100.
 Results:
+
     - Training Accuracy: 70.4%.
     - Testing Accuracy: 70.1%.
 
 **SVM Model**
 How It's Made:
+
     - Built using a support vector machine (SVM)
     - Hyperparameters:
         - Kernels of linear, polynomial, and rbf
         - C values of 0.01, 0.1, 1, 10
     - Loss Function: Hinge Loss function
 Best Hyperparameters:
+
     - C = 10
     - Kernel = rbf
 Results:
+
     - Training Accuracy: 97.37%
     - Testing Accuracy: 81.55%
 
 **Decision Tree Model**
 How It's Made:
+
     - Built using a Decision Tree Classifier
     - Hyperparameters: 
         - Gini, Entropy
@@ -84,17 +93,19 @@ How It's Made:
         - Minimum number of sample leafs: 1, 2, 4
     - Loss functions: Gini & Entropy
 Best Hyperparameters:
+
     - Gini
     - Max Depth: 20
     - Minimum Samples Leaf: 4
     - Min Samples Split: 10
 Results:
+
     - Training Accuracy: 87.48%
     - Test Accuracy: 79.48%
 
 **Reinforcement Learning Models**
 How It's Made:
-    1. Simple Reinforcement Learning:
+   1. Simple Reinforcement Learning:
        - Learns by playing against a random moves,
          this bot learns by a reward system where it gets:
          - +10 points whenever it wins
