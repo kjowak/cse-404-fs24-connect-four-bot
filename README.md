@@ -24,6 +24,9 @@ What types of models did we create?
 4. Decision Tree
 5. Reinforcement Learning
 
+NOTE: You can play against all of these models (except reinforcement learning) in the Play Game file.
+NOTE: You can play against each reinforcement model in the Connect4_Reinforcement_Learning file.
+
 **CNN Model:**
 How It's Made:
     - Built using convolutional neural networks.
