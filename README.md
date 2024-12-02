@@ -60,8 +60,8 @@ Results:
     - Training Accuracy: 73%.
     - Testing Accuracy: 70%.
 
-
-Reinforcement Learning Models:
+**Reinforcement Learning Models**
+How It's Made:
     1. Simple Reinforcement Learning:
        - Learns by playing against a random moves,
          this bot learns by a reward system where it gets:
@@ -73,11 +73,20 @@ Reinforcement Learning Models:
       - Learns in the same way as the other model
       - Includes a Dueling DQN which separates value and advantage streams,
         which should be more efficient
-   Both of these models train againt random moves-- as such, they learned the same strategy
-   of placing in the same column repetatively as it is unlikely that the opponent will do anything
-   to block it. In order to improve them before the final code, I will need to rework the reward system
-   as well as make the bot it plays against be a little more intellegent.
-   
+   3. Heuristic Opponent
+      - Similar to Model 1, but instead of playing against random moves it plays against a smarter opponent
+      - The opponent will now:
+        - Play a move that gets 4 in a row when available
+        - Block the bot's 4 in a row
+        - If none of the moves do one of those two, it will play a random move
+   4. Self-Play
+      - Same rewards as model 1, but instead of playing against a random bot it will play against itself
+Results:
+   - Models 1 and 2 learned to stack on top of themselves repetatively. 
+        - This is likely due to the opponent bot playing random moves, so by stacking repetatively it is very unlikely they will lose.
+   - Model 3 plays mostly random moves. 
+        - This is because the initial bot is too difficult. It does not get the opportunity to learn what will win as it gets blocked every time.
+   - Model 4 Is the best model, it plays mostly random moves as well but with more time to train will likely be decent at playing.
 
 Team Memebers:
 Will Bray-Cotton
