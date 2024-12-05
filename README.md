@@ -94,7 +94,7 @@ How It's Made:
     - Loss functions: Gini & Entropy
 Best Hyperparameters:
 
-    - Gini
+    - Entropy
     - Max Depth: 20
     - Minimum Samples Leaf: 4
     - Min Samples Split: 10
